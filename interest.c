@@ -1,0 +1,13 @@
+\#include<stdio.h>
+int main()
+{
+    int year, amount;
+    double principal=1000.0, rate=0.05;
+    printf(" Year\t Amount On Deposit\n");
+    for(year=1; year<=10; year++)
+    {
+        amount = principal * pow(1.0+rate, year);
+        printf("%d\t %d\n",year,amount);
+    }
+    return 0;
+}
